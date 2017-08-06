@@ -1,4 +1,4 @@
-var controllers = require('./controllers');
+const controllers = require('./controllers');
 
 module.exports = [
   {
