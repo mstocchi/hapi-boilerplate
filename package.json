@@ -27,8 +27,7 @@
     "knex": "^0.13.0",
     "objection": "^0.8.6",
     "pg": "^7.0.2",
-    "require-directory": "^2.1.1",
-    "sequelize": "^4.4.2"
+    "require-directory": "^2.1.1"
   },
   "devDependencies": {
     "lab": "^14.1.1",
