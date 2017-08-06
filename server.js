@@ -10,8 +10,6 @@ var plugins = require('./plugins');
 
 const orm = require('./orm');
 
-
-
 var server = new Hapi.Server();
 
 server.connection({port:settings.port, host:settings.host});
@@ -26,6 +24,5 @@ server.start((err)=>{
     throw err;
   }
       console.log(`Server running at: ${server.info.uri}`);
-      console.log(orm);
 
 });

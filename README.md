@@ -1,11 +1,11 @@
 # Hapi Boilerplate
-### *A Hapi boilerplate with Sequelize, Sequelize-CLI and node-config*
+### *A Hapi boilerplate with Objection.js, * and node-config*
 
 Cool features in this boilerplate:
 
 - It's modular. Define your routes, plugins, models and controllers separately.
 - Uses [node-config](https://github.com/lorenwest/node-config). Define all your configuration properties hierarchically and according to your environment.
-- Models/ORM through [Sequelize](http://sequelizejs.com/) and [Sequelize-cli](https://github.com/sequelize/cli) with common configuration! Supports migrations. Read more about sequelize and Sequelize-cli.
+- Models/ORM through [Objection.js](http://vincit.github.io/objection.js) with common configuration! Supports migrations. 
 
 ## Directory structure ##
 
@@ -20,11 +20,11 @@ hapi-boilerplate
 ├── controllers
 │   ├── index.js            # file that requires all controllers into a hash
 │   └── users.js            # an example controller. use it for inspiration.
-├── migrations              # migrations directory with an example migration. generated with "sequelize-cli"
+├── migrations              # migrations directory with an example migration
 │   └── 20141021121205-create-user.js
 ├── models
-│   ├── index.js            # generated with "sequelize init". requires all models.
-│   └── user.js             # an example model. generated with "sequelize-cli model:create"
+│   ├── index.js            
+│   └── user.js             # an example model
 ├── package.json
 ├── plugins
 │   └── index.js            # register plugins. add your custom plugins in this folder as well.
@@ -37,7 +37,7 @@ hapi-boilerplate
 Just clone the repository:
 
 ```bash
-$ git clone https://github.com/miguelcobain/hapi-boilerplate.git
+$ git clone https://github.com/mstocchi/hapi-boilerplate.git
 ```
 run
 
