@@ -1,12 +1,16 @@
-var models = require('../models');
+const models = require('../models');
+const Category = models.category;
+
 
 module.exports = {
+	
 	get:function (request, reply) {
-    reply(models.category.query().then(categories =>{
-			return categories;
-		})
-		.catch(err => {
-    console.log('oh noes');
-	}))
+		reply(Category.query().then(categories => {
+				return categories;
+			})
+			.catch(err => {
+				reply(err);
+			}))
 	}
+
 };

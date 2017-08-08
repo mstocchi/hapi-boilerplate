@@ -1,13 +1,17 @@
-var models = require('../models');
+const models = require('../models');
+const User = models.user;
 
 module.exports = {
 	get:function (request, reply) {
-    reply(models.user.query().then(users =>{
+    reply(User.query().then(users =>{
 			return users;
-	}).catch(err => {
-    console.log('oh noes');
-  }))},
-	salute:function (request, reply) {
+			}).catch(err => {
+    		reply(err);
+			})
+		)},
+	
+		echo:function (request, reply) {
 	  reply('Hello, ' + encodeURIComponent(request.params.name) + '!');
 	}
+
 };
