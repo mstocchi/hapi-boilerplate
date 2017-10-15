@@ -19,7 +19,7 @@
     "url": "https://github.com/miguelcobain/hapi-boilerplate/issues"
   },
   "dependencies": {
-    "bcrypt": "^1.0.2",
+    "bcrypt": "^1.0.3",
     "boom": "^5.2.0",
     "config": "^1.26.1",
     "good": "^7.2.0",
@@ -32,6 +32,7 @@
     "joi": "^10.6.0",
     "jsonwebtoken": "^7.4.2",
     "knex": "^0.13.0",
+    "mysql": "^2.15.0",
     "objection": "^0.8.6",
     "pg": "^7.0.2",
     "require-directory": "^2.1.1",
