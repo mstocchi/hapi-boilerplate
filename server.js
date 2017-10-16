@@ -1,4 +1,5 @@
 'use strict';
+require('app-module-path/register');
 
 const Hapi = require('hapi');
 const Inert = require('inert')

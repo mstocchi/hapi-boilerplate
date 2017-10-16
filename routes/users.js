@@ -1,5 +1,5 @@
 const Joi = require('Joi')
-const controllers = require('../lib/controllers');
+const controllers = require('lib/controllers');
 
 module.exports = [{
     method: 'GET',
