@@ -60,7 +60,7 @@ server.register([
         }
     },
     {
-        register: require('./routes')
+        register: require('lib/plugins/routes')
     }
 ], err => {
     if (err) {
