@@ -18,6 +18,9 @@
   "bugs": {
     "url": "https://github.com/miguelcobain/hapi-boilerplate/issues"
   },
+  "scripts": {
+    "test": "lab  -c -v -l"
+  },
   "dependencies": {
     "app-module-path": "^2.2.0",
     "bcrypt": "^1.0.3",
@@ -33,6 +36,7 @@
     "joi": "^10.6.0",
     "jsonwebtoken": "^7.4.2",
     "knex": "^0.13.0",
+    "lab": "^14.3.1",
     "mysql": "^2.15.0",
     "objection": "^0.8.6",
     "pg": "^7.0.2",
@@ -40,6 +44,7 @@
     "vision": "^4.1.1"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
     "lab": "^14.1.1",
     "sqlite3": "^3.1.8"
   }
