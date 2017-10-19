@@ -1,0 +1,19 @@
+{
+    "host": {
+        "address": "localhost",
+        "port": "3000"
+    },
+    "encryption": {
+        "jwtsignkey": "NeverShareYourSecret"
+    },
+    "database": { 
+        "connection": {
+            "host"     : "192.168.56.101",
+            "user"     : "taskdo",
+            "password" : "password",
+            "database" : "TaskDO",
+            "charset"  : "utf8"
+          }
+    },
+    "version": "0.1"
+}
