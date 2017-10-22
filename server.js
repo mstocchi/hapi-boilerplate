@@ -10,21 +10,6 @@ const Good = require('good');
 const path = require('path');
 const userService = require('lib/services/userService')
 
-const validateJwtToken = function (decoded, request, callback) {
-  
-  userService.findUserByEmailAndToken(decoded.userid, request.auth.token)
-  .then(res=>{
-    if(res.email === decoded.userid){
-      return callback(null, true)
-    }
-  })
-  .catch(err => {
-    console.log(err);
-    return callback(null, false)
-  })
-}
-
-
 const server = new Hapi.Server();
 
 server.connection({
@@ -70,7 +55,7 @@ server.register([
     {
         register: require('./lib/plugins/auth-jwt'),
         options: {
-            validationHandler: validateJwtToken,
+            validationHandler: userService.validateJwtToken,
             jwtencodekey: require('./lib/config').get('encryption.jwtsignkey')
         }
     },
